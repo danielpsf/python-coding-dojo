@@ -10,9 +10,19 @@ class CaseConverterTestCase(unittest.TestCase):
 
     @parameterized.expand([
         (
-                'Should convert potato_name to potatoName',
-                'potato_name',
-                'potatoName',
+                'Should convert mashed_potato to mashedPotato',
+                'mashed_potato',
+                'mashedPotato',
+        ),
+        (
+                'Should convert fried_potato to friedPotato',
+                'fried_potato',
+                'friedPotato',
+        ),
+        (
+                'Should convert cooked_potato to cookedPotato',
+                'cooked_potato',
+                'cookedPotato',
         )
     ])
     def test_convert_from_snake_case_to_camel_case(self, name, snake_case, camel_case):
