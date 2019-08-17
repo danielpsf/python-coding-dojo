@@ -20,7 +20,7 @@ class CaseConverterTestCase(unittest.TestCase):
                 'friedPotato',
         ),
         (
-                'Should convert cooked_potato to cookedPotato',
+                'Should convert backed_potato to bakedPotato',
                 'cooked_potato',
                 'cookedPotato',
         )
