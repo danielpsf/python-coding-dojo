@@ -49,6 +49,11 @@ class CaseConverterTestCase(unittest.TestCase):
                 'Should convert backed_potato to baked-potato',
                 'baked_potato',
                 'baked-potato',
+        ),
+        (
+                'Should convert baked_potato_with_cream_cheese to baked-potato-with-cream-cheese',
+                'baked_potato_with_cream_cheese',
+                'baked-potato-with-cream-cheese',
         )
     ])
     def test_convert_from_snake_case_to_kebab_case(self, name, snake_case, kebab_case):
@@ -71,7 +76,7 @@ class CaseConverterTestCase(unittest.TestCase):
                 'baked_potato',
         ),
         (
-                'Should convert backedPotatoWithCreamCheese to baked_potato_with_cream_cheese',
+                'Should convert bakedPotatoWithCreamCheese to baked_potato_with_cream_cheese',
                 'bakedPotatoWithCreamCheese',
                 'baked_potato_with_cream_cheese',
         )
