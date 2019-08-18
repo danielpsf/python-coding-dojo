@@ -24,6 +24,11 @@ class CaseConverterTestCase(unittest.TestCase):
                 'Should convert backed_potato to bakedPotato',
                 'baked_potato',
                 'bakedPotato',
+        ),
+        (
+                'Should convert baked_potato_with_cream_cheese to bakedPotatoWithCreamCheese',
+                'baked_potato_with_cream_cheese',
+                'bakedPotatoWithCreamCheese',
         )
     ])
     def test_convert_from_snake_case_to_camel_case(self, name, snake_case, camel_case):
