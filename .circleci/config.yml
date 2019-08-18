@@ -34,7 +34,10 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
-            pytest --cov=src test --cov-report xml  --junitxml coverage.xml
+            pytest --cov=src test --cov-report html --cov-report xml  --junitxml result.xml
+
+      - store_artifacts:
+         path: /htmlcov
 
       - codecov/upload:
           file: coverage.xml
